@@ -1,0 +1,48 @@
+<!-- <div class="shadow p-4 border">
+    <div class="flex justify-between p-4">
+        <h2 class="text-xl font-semibold">Users Data</h2>
+        <button mat-raised-button color="primary" routerLink="/users/add">
+            Add User
+        </button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of users; track $index) {
+                <tr>
+                    <td>{{item.name}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.age}}</td>
+                    <td>{{item.address}}</td>
+                    <td> 
+                        <button mat-raised-button color="accent mr-4" [routerLink]="'/users/'+ item._id">
+                            Edit
+                        </button>
+                        <button mat-raised-button color="warn" (click)="deleteUser(item._id!)">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div> -->
+<div class=" bg-orange-500 py-10">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <span class="text-3xl text-white font-bold tracking-tight">
+        MernEats.com
+      </span>
+      <span class=" text-white font-bold tracking-tight flex gap-4">
+        <span>Privacy Policy</span>
+        <span>Terms of Service</span>
+      </span>
+    </div>
+  </div>
